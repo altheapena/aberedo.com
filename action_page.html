@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], input[type=password] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: indianred;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+    }
+</style>
+    
+<body background="yellowbg.jpg">
+<body>
+    <center><img src="arellanobanner.png"></center>
+    <fieldset>
+    <form id="myForm">
+    <legend><h2>Course Evaluation</h2></legend>
+    <b>NOTE: This is an anonymous survey. Your instructor will not get copies of individual results. Please complete the survey and click the Submit button.</b>
+        <br><br>
+    Course Number: <input type="text" name="firstname" value=" ">
+    <br><br>
+    <b>The content of the course was relevant to my degree.</b>
+    <br>
+    <input type="radio" name="option" value="sa"> Strongly Agree &nbsp;<input type="radio" name="option" value="a"> Agree &nbsp;<input type="radio" name="option" value="uc"> Uncertain &nbsp;<input type="radio" name="option" value="da"> Disagree &nbsp;<input type="radio" name="option" value="sd"> Strongly Disagree
+    <br><br>
+    <b>The assignments reinforced the content of the course.</b>
+    <br>
+    <input type="radio" name="option1" value="sa"> Strongly Agree &nbsp;<input type="radio" name="option1" value="a"> Agree &nbsp;<input type="radio" name="option1" value="uc"> Uncertain &nbsp;<input type="radio" name="option1" value="da"> Disagree &nbsp;<input type="radio" name="option1" value="sd"> Strongly Disagree
+    <br><br>
+    <b>My instructor was well organized.</b>
+    <br>
+    <input type="radio" name="option2" value="sa"> Strongly Agree &nbsp;<input type="radio" name="option2" value="a"> Agree &nbsp;<input type="radio" name="option" value="uc"> Uncertain &nbsp;<input type="radio" name="option2" value="da"> Disagree &nbsp;<input type="radio" name="option2" value="sd"> Strongly Disagree
+    <br><br>
+    <b>It was easy for me to contact my instructor.</b>
+    <br>
+    <input type="radio" name="option3" value="sa"> Strongly Agree &nbsp;<input type="radio" name="option3" value="a"> Agree &nbsp;<input type="radio" name="option3" value="uc"> Uncertain &nbsp;<input type="radio" name="option3" value="da"> Disagree &nbsp;<input type="radio" name="option3" value="sd"> Strongly Disagree
+    <br><br>
+    <b>This course was amont the best I have taken.</b>
+    <br>
+    <input type="radio" name="option4" value="sa"> Strongly Agree &nbsp;<input type="radio" name="option4" value="a"> Agree &nbsp;<input type="radio" name="option4" value="uc"> Uncertain &nbsp;<input type="radio" name="option4" value="da"> Disagree &nbsp;<input type="radio" name="option4" value="sd"> Strongly Disagree
+    <br><br>
+    <b>What other comments do you have about this course?</b>
+    <br>
+    <textarea rows="4" cols="50"> </textarea>
+    <br><br>
+    <center><button onclick="openWin()">SUBMIT</button>
+    <script>
+        var myWindow;
+        function openWin() {
+        myWindow = window.open("", "myWindow", "width=350,height=100");
+        myWindow.document.write("<p>Thank you for your input. Your evaluation has been submitted. <br><br><b>- Office of Academic Affairs</p>"); }
+    </script>
+    <button type="button" value="Clear" onClick="this.form.reset()">Clear</button></center>
+    </form>
+    </fieldset>
+</body>
+</html>
